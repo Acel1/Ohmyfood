@@ -1,0 +1,20 @@
+@mixin flex-center-collumn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-row-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media only screen and (min-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@mixin img() {
+}

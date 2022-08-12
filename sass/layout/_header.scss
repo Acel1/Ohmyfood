@@ -1,0 +1,7 @@
+.header {
+  @include flex-center-collumn;
+  &__logo {
+    width: 100%;
+    max-width: 180px;
+  }
+}
