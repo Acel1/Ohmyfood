@@ -83,6 +83,7 @@
     }
   }
 }
+
 .restaurants {
   flex-direction: column;
   background: map-get($color, light-grey);
@@ -119,20 +120,29 @@
   &__fav-btn {
     position: absolute;
     right: 13px;
-    bottom: 30px;
-    font-size: 1.2rem;
+    bottom: 25px;
+    font-size: 1.4rem;
     padding: 0.2rem;
     cursor: pointer;
-    & i:nth-child(2) {
-      display: none;
-      @include linear-gradient-prim;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
+    & > i {
+      transform: scaleY(1.05);
     }
-    & input:checked {
-      color: red;
+    & > i:nth-child(2) {
+      display: none;
+    }
+
+    &:hover {
+      & > i:nth-child(1) {
+        display: none;
+      }
+      & > i:nth-child(2) {
+        display: inline-block;
+        @include linear-gradient-prim;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+      }
     }
   }
 }

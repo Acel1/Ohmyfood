@@ -174,7 +174,7 @@ body {
 
 .box {
   display: flex;
-  padding: 1.5rem 0.8rem;
+  padding: 1.5rem 1rem;
 }
 
 img {
@@ -189,6 +189,32 @@ img {
 .header__logo {
   width: 100%;
   max-width: 180px;
+}
+
+.footer {
+  background: #353535;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.8rem 0 1.5rem 1.6rem;
+}
+.footer__logo {
+  padding: 0.15rem 0;
+  color: white;
+  font-family: "Shrikhand";
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.footer__item {
+  padding: 0.35rem;
+  font-size: 0.9rem;
+}
+.footer__item i {
+  width: 15px;
+  text-align: center;
+  margin: 0 12px 0 0;
 }
 
 .locate {
@@ -332,19 +358,25 @@ img {
 .restaurant__fav-btn {
   position: absolute;
   right: 13px;
-  bottom: 30px;
-  font-size: 1.2rem;
+  bottom: 25px;
+  font-size: 1.4rem;
   padding: 0.2rem;
   cursor: pointer;
 }
-.restaurant__fav-btn i:nth-child(2) {
+.restaurant__fav-btn > i {
+  transform: scaleY(1.05);
+}
+.restaurant__fav-btn > i:nth-child(2) {
   display: none;
+}
+.restaurant__fav-btn:hover > i:nth-child(1) {
+  display: none;
+}
+.restaurant__fav-btn:hover > i:nth-child(2) {
+  display: inline-block;
   background: linear-gradient(354deg, #9356dc 4%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-}
-.restaurant__fav-btn input:checked {
-  color: red;
 }/*# sourceMappingURL=style.css.map */

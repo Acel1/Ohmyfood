@@ -1,0 +1,26 @@
+.footer {
+  background: map-get($color, dark-grey);
+  color: white;
+  @include flex-center-collumn;
+  align-items: flex-start;
+  padding: 0.8rem 0 1.5rem 1.6rem;
+
+  &__logo {
+    padding: 0.15rem 0;
+    color: white;
+    font-family: "Shrikhand";
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+
+  &__item {
+    padding: 0.35rem;
+    font-size: 0.9rem;
+
+    & i {
+      width: 15px;
+      text-align: center;
+      margin: 0 12px 0 0;
+    }
+  }
+}
