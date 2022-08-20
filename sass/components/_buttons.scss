@@ -1,0 +1,54 @@
+.like-btn {
+  position: absolute;
+  font-size: 1.4rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  & > i {
+    transform: scaleY(1.05);
+  }
+  & > i:nth-child(2) {
+    display: none;
+  }
+
+  &:hover {
+    & > i:nth-child(1) {
+      display: none;
+    }
+    & > i:nth-child(2) {
+      display: inline-block;
+      @include linear-gradient-prim;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+
+  &--homepage {
+    right: 13px;
+    bottom: 25px;
+  }
+  &--menu {
+    right: 30px;
+    top: 40px;
+  }
+}
+
+.colored-btn {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0.9rem 0;
+  color: map-get($color, white);
+  border-radius: 10rem;
+  margin: 1.5rem 0;
+  @include linear-gradient-prim;
+
+  &--explore {
+    width: 200px;
+  }
+
+  &--menu {
+    width: 180px;
+    align-self: center;
+  }
+}

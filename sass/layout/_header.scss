@@ -1,7 +1,19 @@
 .header {
-  @include flex-center-collumn;
+  @include flex-center-column;
+  @include shadow;
+  position: relative;
+  height: 64px;
+  justify-content: center;
   &__logo {
     width: 100%;
     max-width: 180px;
+  }
+
+  &__back-btn {
+    position: absolute;
+    left: 1.4rem;
+
+    font-size: 1.4rem;
+    padding: 0.4rem;
   }
 }

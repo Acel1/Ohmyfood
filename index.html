@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./public/images/logo/favicon.png" />
     <title>ohmyfood!</title>
     <link
       rel="stylesheet"
@@ -13,9 +12,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./public/style.css" />
+    <link rel="icon" href="./public/images/logo/favicon.png" />
   </head>
   <body>
-    <header class="header box">
+    <header class="header">
       <h1 class="header__logo">
         <img src="./public/images\logo/ohmyfood@2x.svg" alt="ohmyfood entreprise de commande de repas en ligne." />
       </h1>
@@ -28,7 +28,7 @@
     <nav class="explore box">
       <h2 class="explore__title">Réservez le menu qui vous convient</h2>
       <p class="explore__text">Découvrez des restaurants d'exeception, sélectionnés par nos soins.</p>
-      <button class="explore__btn">Explorez nos restaurants</button>
+      <button class="colored-btn colored-btn--explore">Explorez nos restaurants</button>
     </nav>
 
     <section class="about box">
@@ -44,34 +44,33 @@
       <h2 class="restaurants__title">Restaurants</h2>
       <ul class="restaurants__cards">
         <li class="restaurant">
-          <a href="#"><img src="./public/images/restaurants/la-palette-du-gout.jpg" alt="restaurant la palette du goût" class="restaurant__img" /> </a>
+          <a href="./menu-la-palette-du-gout.html"><img class="img-restau img-restau--homepage" src="./public/images/restaurants/la-palette-du-gout.jpg" alt="restaurant la palette du goût" /> </a>
           <i class="restaurant__new">Nouveau</i>
           <h3 class="restaurant__title">La palette du goût</h3>
           <p class="restaurant__location">Ménilmontant</p>
-          <button class="restaurant__fav-btn"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
+          <button class="like-btn like-btn--homepage"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
         </li>
         <li class="restaurant">
-          <a href="#"><img src="./public/images/restaurants/la-note-enchantee.jpg" alt="restaurant la note enchantée" class="restaurant__img" /></a>
+          <a href="./menu-la-note-enchantee.html"><img class="img-restau img-restau--homepage" src="./public/images/restaurants/la-note-enchantee.jpg" alt="restaurant la note enchantée" /></a>
           <i class="restaurant__new">Nouveau</i>
           <h3 class="restaurant__title">La note enchantée</h3>
           <p class="restaurant__location">Charonne</p>
-          <button class="restaurant__fav-btn"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
+          <button class="like-btn like-btn--homepage"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
         </li>
         <li class="restaurant">
-          <a href="#"> <img src="./public/images/restaurants/a-la-francaise.jpg" alt="restaurant a la française" class="restaurant__img" /> </a>
+          <a href="./menu-a-la-francaise.html"> <img class="img-restau img-restau--homepage" src="./public/images/restaurants/a-la-francaise.jpg" alt="restaurant a la française" /> </a>
           <h3 class="restaurant__title">À la française</h3>
           <p class="restaurant__location">Cité Rouge</p>
-          <button class="restaurant__fav-btn"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
+          <button class="like-btn like-btn--homepage"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
         </li>
         <li class="restaurant">
-          <a href="#"> <img src="./public/images/restaurants/le-delice-des-sens.jpg" alt="restaurant le délice des sens" class="restaurant__img" /> </a>
+          <a href="./menu-le-delice-des-sens.html"> <img class="img-restau img-restau--homepage" src="./public/images/restaurants/le-delice-des-sens.jpg" alt="restaurant le délice des sens" /> </a>
           <h3 class="restaurant__title">Le délice des sens</h3>
           <p class="restaurant__location">Folie-Méricourt</p>
-          <button class="restaurant__fav-btn"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
+          <button class="like-btn like-btn--homepage"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button>
         </li>
       </ul>
     </section>
-
     <footer class="footer">
       <h2 class="footer__logo">ohmyfood</h2>
       <ul class="footer__list">

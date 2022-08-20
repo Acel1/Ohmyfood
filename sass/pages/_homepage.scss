@@ -1,5 +1,5 @@
 .locate {
-  @include flex-center-collumn;
+  @include flex-center-column;
   font-weight: 700;
   color: map-get($map: $color, $key: dark-grey);
   background: map-get($color, mid-grey);
@@ -14,7 +14,7 @@
 }
 
 .explore {
-  @include flex-center-collumn;
+  @include flex-center-column;
   text-align: center;
   justify-content: space-around;
   background: map-get($color, light-grey);
@@ -25,20 +25,10 @@
   &__text {
     min-width: 310px;
   }
-
-  &__btn {
-    font-size: 0.9rem;
-    font-weight: 300;
-    padding: 1rem 1.5rem;
-    color: map-get($color, white);
-    border-radius: 10rem;
-    margin: 1.5rem 0;
-    @include linear-gradient-prim;
-  }
 }
 
 .about {
-  @include flex-center-collumn;
+  @include flex-center-column;
   align-items: flex-start;
   &__list {
     @include flex-row-wrap;
@@ -102,11 +92,6 @@
   margin: 1rem 0;
   @include shadow;
 
-  & img {
-    height: 175px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
   &__new {
     position: absolute;
     top: 13px;
@@ -115,34 +100,5 @@
     background-color: map-get($color, ter);
     color: darken(map-get($color, ter), 40%);
     font-weight: 600;
-  }
-
-  &__fav-btn {
-    position: absolute;
-    right: 13px;
-    bottom: 25px;
-    font-size: 1.4rem;
-    padding: 0.2rem;
-    cursor: pointer;
-    & > i {
-      transform: scaleY(1.05);
-    }
-    & > i:nth-child(2) {
-      display: none;
-    }
-
-    &:hover {
-      & > i:nth-child(1) {
-        display: none;
-      }
-      & > i:nth-child(2) {
-        display: inline-block;
-        @include linear-gradient-prim;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-      }
-    }
   }
 }

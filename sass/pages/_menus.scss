@@ -1,0 +1,57 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1.8rem 1.25rem;
+
+  max-height: 1200px;
+  background-color: map-get($color, light-grey);
+  overflow: scroll;
+  border-radius: 50px 50px 0 0;
+  margin-top: -60px;
+
+  &__title {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  &__section {
+    margin: 1rem 0;
+    & > h3 {
+      padding: 1rem 0;
+      font-weight: 200;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 0.6rem 0.25rem;
+    background-color: white;
+    border-radius: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > h4 {
+      margin-bottom: 0.2rem;
+    }
+    & > p {
+      display: flex;
+      justify-content: space-between;
+      & span:last-child {
+        font-weight: 500;
+      }
+    }
+    & > span {
+      display: none;
+    }
+  }
+}
