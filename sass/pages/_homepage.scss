@@ -71,6 +71,14 @@
         transform: scale(78%, 96%);
       }
     }
+
+    &:hover {
+      transition: all 0.1s;
+      background: lighten($prim, 35%);
+      & > i {
+        color: $prim;
+      }
+    }
   }
 }
 
