@@ -88,12 +88,16 @@
 
   &__cards {
     @include flex-row-wrap;
+    @include desktop {
+    }
   }
 }
 
 .restaurant {
   border-radius: 10px;
   width: 100%;
+  max-width: 500px;
+  min-width: 240px;
   height: 250px;
   position: relative;
   background-color: white;
@@ -110,3 +114,4 @@
     font-weight: 600;
   }
 }
+ 
