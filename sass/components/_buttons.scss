@@ -46,6 +46,8 @@
   margin: 1.25rem 0;
   @include linear-gradient-prim;
   @include shadow;
+  background-color: #686868;
+  transition: all 0.2s ease-in-out;
   &--explore {
     width: 200px;
   }
@@ -55,5 +57,8 @@
     align-self: center;
   }
   &:hover {
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 40%);
   }
 }

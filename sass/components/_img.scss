@@ -10,5 +10,6 @@
   &--menu {
     height: 260px;
     object-fit: cover;
+    @include shadow;
   }
 }
