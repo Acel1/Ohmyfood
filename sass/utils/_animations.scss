@@ -72,15 +72,23 @@
 // LOADING MENU ITEMS
 
 .menu__item {
-  animation: menu-items 1s ease-in-out;
+  opacity: 0;
+  animation: menu-items 1s ease;
+  animation-fill-mode: forwards;
+
+  @for $i from 2 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.3s};
+    }
+  }
 }
 
 @keyframes menu-items {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(10px);
   }
-  to {
+  100% {
     opacity: 1;
   }
 }

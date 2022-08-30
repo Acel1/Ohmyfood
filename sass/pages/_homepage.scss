@@ -89,6 +89,7 @@
   &__cards {
     @include flex-row-wrap;
     @include desktop {
+      flex-wrap: nowrap;
     }
   }
 }
@@ -101,9 +102,11 @@
   height: 250px;
   position: relative;
   background-color: white;
-  margin: 1rem 0;
+  margin: 1rem;
   @include shadow;
-
+  @include desktop {
+    // margin: 1rem 1rem;
+  }
   &__new {
     position: absolute;
     top: 13px;
@@ -114,4 +117,3 @@
     font-weight: 600;
   }
 }
- 
