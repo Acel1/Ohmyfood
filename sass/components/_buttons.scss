@@ -28,7 +28,7 @@
   }
 
   &--homepage {
-    right: 13px;
+    right: 0.7rem;
     bottom: 25px;
   }
   &--menu {
@@ -41,13 +41,14 @@
   font-size: 0.9rem;
   font-weight: 300;
   padding: 0.9rem 0;
-  color: map-get($color, white);
+  color: white;
   border-radius: 10rem;
   margin: 1.25rem 0;
   @include linear-gradient-prim;
   @include shadow;
   background-color: #686868;
   transition: all 0.2s ease-in-out;
+
   &--explore {
     width: 200px;
   }
