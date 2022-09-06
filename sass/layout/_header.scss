@@ -5,10 +5,14 @@
   height: 64px;
   justify-content: center;
   &__logo {
-    width: 100%;
     text-align: center;
-  }
 
+    @include mobile-m {
+      img {
+        width: 90%;
+      }
+    }
+  }
   &__back-btn {
     position: absolute;
     left: 1.4rem;
