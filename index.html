@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>ohmyfood!</title>
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -14,7 +16,10 @@
     <link rel="stylesheet" href="./public/style.css" />
     <link rel="icon" href="./public/images/logo/favicon.png" />
   </head>
+
   <body>
+    <!---LOADING SCREEN--->
+
     <div class="loader">
       <div></div>
       <div></div>
@@ -22,21 +27,29 @@
       <div></div>
     </div>
 
+    <!---HEADER--->
+
     <header class="header">
       <h1 class="header__logo">
         <a href="./index.html"><img src="./public/images/logo/ohmyfood@2x.svg" alt="ohmyfood entreprise de commande de repas en ligne." /></a>
       </h1>
     </header>
 
+    <!---LOCATE--->
+
     <div class="locate box">
       <a href="#" onclick="alert(`${'En développement 🔧'}`)"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</a>
     </div>
+
+    <!---EXPLORE--->
 
     <nav class="explore box">
       <h2 class="explore__title">Réservez le menu qui vous convient</h2>
       <p class="explore__text">Découvrez des restaurants d'exeception, sélectionnés par nos soins.</p>
       <button class="colored-btn colored-btn--explore">Explorez nos restaurants</button>
     </nav>
+
+    <!---ABOUT--->
 
     <section class="about box">
       <h2 class="about__title">Fonctionnement</h2>
@@ -46,6 +59,8 @@
         <li class="about__item"><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</li>
       </ul>
     </section>
+
+    <!---RESTAURANTS--->
 
     <section class="restaurants box">
       <h2 class="restaurants__title">Restaurants</h2>
@@ -79,6 +94,9 @@
         </li>
       </ul>
     </section>
+
+    <!---FOOTER--->
+
     <footer class="footer">
       <h2 class="footer__logo">ohmyfood</h2>
       <ul class="footer__list">
